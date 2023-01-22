@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import TelaInicio from "./src/screens/TelaInicio";
 import TelaTabuada from "./src/screens/TelaTabuada";
 import TelaRespostaCorreta from "./src/screens/TelaRespostaCorreta";
+import TelaRespostaErrada from "./src/screens/TelaRespostaErrada";
 
 const Telas = createStackNavigator();
 
@@ -15,6 +16,10 @@ export default function App() {
         <Telas.Screen
           name="TelaRespostaCorreta"
           component={TelaRespostaCorreta}
+        />
+        <Telas.Screen
+          name="TelaRespostaErrada"
+          component={TelaRespostaErrada}
         />
         <Telas.Screen name="TelaTabuada" component={TelaTabuada} />
       </Telas.Navigator>

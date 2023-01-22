@@ -20,7 +20,7 @@ const ModalQuestao = () => {
     if (validarResposta(valor1, valor2, resposta)) {
       navigate("TelaRespostaCorreta");
     } else {
-      console.log("errou manito");
+      navigate("TelaRespostaErrada");
     }
     criarQuestao();
   };
