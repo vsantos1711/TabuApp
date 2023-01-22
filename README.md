@@ -1,4 +1,4 @@
-<h1 align="center">:file_cabinet: Exemplo de README.md</h1>
+<h1 align="center">:file_cabinet: TabuAPP</h1>
 
 ## :memo: Descrição
 App de tabuada para crianças, utilizando o ReactNative
