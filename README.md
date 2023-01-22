@@ -23,10 +23,10 @@ e em seguida rodar o seguinte comando:
 ```
 expo start
 ```
-
+Em seguida, basta acessar o app do Expo e escanear o qr code que irá aparecer no prompt.
+obs.: o App deve ser baixado pela PlayStore ou App store
 ## :soon: Implementação futura
-* Tela parabenizando o aluno;
-* Tela exibindo a tabuada.
+...
 
 ## :handshake: Colaboradores
 <table>
