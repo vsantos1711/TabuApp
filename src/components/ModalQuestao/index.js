@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-
 import { gerarNumero, validarResposta } from "./functions";
+import Btn from "../Btn";
+import { useNavigation } from "@react-navigation/native";
 
 const ModalQuestao = () => {
+  const { navigate } = useNavigation();
   const [valor1, setNumero1] = useState(gerarNumero());
   const [valor2, setNumero2] = useState(gerarNumero());
   const [resposta, setResposta] = useState(0);
@@ -16,7 +18,7 @@ const ModalQuestao = () => {
 
   const responder = () => {
     if (validarResposta(valor1, valor2, resposta)) {
-      console.log("acertou miseravi");
+      navigate("TelaRespostaCorreta");
     } else {
       console.log("errou manito");
     }
@@ -37,23 +39,25 @@ const ModalQuestao = () => {
       </S.Questao>
 
       <S.Botoes>
-        <S.Button
-          style={{ backgroundColor: "red" }}
+        <Btn
+          width={100}
+          fontSize={20}
+          bgColor="red"
+          TextBtn="PULAR"
           onPress={() => {
             criarQuestao();
           }}
-        >
-          <S.TextBtn>PULAR</S.TextBtn>
-        </S.Button>
+        />
 
-        <S.Button
-          style={{ backgroundColor: "green" }}
+        <Btn
+          width={150}
+          fontSize={20}
+          bgColor="green"
+          TextBtn="RESPONDER"
           onPress={() => {
             responder();
           }}
-        >
-          <S.TextBtn>RESPONDER</S.TextBtn>
-        </S.Button>
+        />
       </S.Botoes>
     </S.Container>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import ImgFundo from "../../assets/fundo.png";
 import ModalQuestao from "../../components/ModalQuestao";
+import Btn from "../../components/Btn";
 import { useNavigation } from "@react-navigation/native";
 
 const TelaInicio = () => {
@@ -10,13 +11,15 @@ const TelaInicio = () => {
   return (
     <S.Container source={ImgFundo} resizeMode={"cover"}>
       <ModalQuestao />
-      <S.Btn
+      <Btn
+        width={300}
+        fontSize={20}
+        bgColor="#33658a"
+        TextBtn="VER TABUADA"
         onPress={() => {
           navigate("TelaTabuada");
         }}
-      >
-        <S.TextBtn>VER TABUADA</S.TextBtn>
-      </S.Btn>
+      />
     </S.Container>
   );
 };

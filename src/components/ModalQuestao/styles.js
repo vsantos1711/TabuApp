@@ -7,6 +7,7 @@ export const Container = styled.View`
   border-radius: 20px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 `;
 export const Titulo = styled.Text`
   font-size: 30px;
@@ -39,15 +40,4 @@ export const Botoes = styled.View`
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-`;
-export const Button = styled.Pressable`
-  width: 130px;
-  height: auto;
-  padding: 5px;
-  border-radius: 5px;
-`;
-export const TextBtn = styled.Text`
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
 `;
