@@ -4,8 +4,8 @@ import * as S from "./styles";
 import { gerarNumero, validarResposta } from "./functions";
 
 const ModalQuestao = () => {
-  const [valor1, setNumero1] = useState(1);
-  const [valor2, setNumero2] = useState(1);
+  const [valor1, setNumero1] = useState(gerarNumero());
+  const [valor2, setNumero2] = useState(gerarNumero());
   const [resposta, setResposta] = useState(0);
 
   const criarQuestao = () => {

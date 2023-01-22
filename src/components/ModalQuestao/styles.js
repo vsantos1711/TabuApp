@@ -44,6 +44,7 @@ export const Button = styled.Pressable`
   width: 130px;
   height: auto;
   padding: 5px;
+  border-radius: 5px;
 `;
 export const TextBtn = styled.Text`
   color: #fff;
