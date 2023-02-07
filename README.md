@@ -43,4 +43,4 @@ obs.: o App deve ser baixado pela PlayStore ou App store
 </table>
 
 ## :dart: Status do projeto
-Em andamento...
+Finalizado!
