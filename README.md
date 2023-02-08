@@ -1,5 +1,10 @@
 <h1 align="center">:iphone: TabuAPP</h1>
 
+## :dart: Status do projeto
+
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+
+
 ## :memo: Descrição
 App de tabuada para crianças, utilizando o ReactNative
 
@@ -41,6 +46,3 @@ obs.: o App deve ser baixado pela PlayStore ou App store
     </td>
   </tr>
 </table>
-
-## :dart: Status do projeto
-Finalizado!
